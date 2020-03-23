@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "", :tag => "#{s.version}" }
 
   s.resources  = 'Libs/BUAdSDK.bundle'
-  s.vendored_frameworks = 'Libs/BUAdSDK.framework'
+  s.vendored_frameworks = 'Libs/BUAdSDK.framework', "Libs/BUFoundation.framework"
 
   s.frameworks = "StoreKit", "MobileCoreServices", "WebKit", "MediaPlayer", "CoreMedia", "AVFoundation", "CoreLocation", "CoreTelephony", "SystemConfiguration", "AdSupport", "CoreMotion", "Photos", "Accelerate"
   s.libraries = "resolv.9", "c++", "z", "sqlite3"

@@ -15,19 +15,16 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                     头条广告
                    DESC
-
+                   
   s.homepage     = "https://github.com/tjs101"
 
   s.author             = { "quentin" => "tjs101@live.cn" }
   s.platform     = :ios, "9.0"
-
-
   s.source       = { :git => "", :tag => "#{s.version}" }
-
   s.resources  = 'Libs/BUAdSDK.bundle'
   s.vendored_frameworks = 'Libs/BUAdSDK.framework', "Libs/BUFoundation.framework"
 
   s.frameworks = "StoreKit", "MobileCoreServices", "WebKit", "MediaPlayer", "CoreMedia", "AVFoundation", "CoreLocation", "CoreTelephony", "SystemConfiguration", "AdSupport", "CoreMotion", "Photos", "Accelerate"
-  s.libraries = "resolv.9", "c++", "z", "sqlite3"
+  s.libraries = "resolv.9", "c++", "z", "sqlite3", "bz2"
 
 end

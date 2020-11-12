@@ -9,8 +9,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "BUAdSDK"
-  s.version      = "3.3.0.1"
-  s.summary      = "头条广告2020-10-15：V3.3.0.1"
+  s.version      = "3.3.0.5"
+  s.summary      = "头条广告2020-11-06：V3.3.0.5"
 
   s.description  = <<-DESC
                     头条广告

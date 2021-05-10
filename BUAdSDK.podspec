@@ -9,8 +9,8 @@
 Pod::Spec.new do |s|
 
   s.name         = "BUAdSDK"
-  s.version      = "3.5.0.4"
-  s.summary      = "头条广告2021-3-16：V3.5.0.4"
+  s.version      = "3.6.1.1"
+  s.summary      = "头条广告2021-04-28：V3.6.1.1"
 
   s.description  = <<-DESC
                     头条广告
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.resources  = 'Libs/*.bundle'
   s.vendored_frameworks = 'Libs/*.framework'
 
-  s.frameworks = "StoreKit", "MobileCoreServices", "WebKit", "MediaPlayer", "CoreMedia", "AVFoundation", "CoreLocation", "CoreTelephony", "SystemConfiguration", "AdSupport", "CoreMotion", "Photos", "Accelerate", "Security", "JavaScriptCore","ImageIO"
-  s.libraries = "resolv.9", "c++", "z", "sqlite3", "bz2", "iconv"
+  s.frameworks = 'UIKit', 'MapKit', 'WebKit', 'MediaPlayer', 'CoreLocation', 'AdSupport', 'CoreMedia', 'AVFoundation', 'CoreTelephony', 'StoreKit', 'SystemConfiguration', 'MobileCoreServices', 'CoreMotion', 'Accelerate','AudioToolbox','JavaScriptCore','Security','CoreImage','AudioToolbox','ImageIO','QuartzCore','CoreGraphics','CoreText'
+  s.libraries = 'c++', 'resolv.9', 'z', 'sqlite3', 'bz2', 'xml2', 'iconv', 'c++abi'
 
 end
